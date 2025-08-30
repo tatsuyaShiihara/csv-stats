@@ -1,0 +1,36 @@
+{
+  "name": "csv-stats",
+  "version": "0.1.0",
+  "description": "CLI to compute average and max of a CSV column",
+  "type": "module",
+  "bin": {
+    "csv-stats": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "ts-node src/cli.ts",
+    "start": "node dist/cli.js",
+    "demo": "npm run dev -- examples/sample.csv -c price --header",
+    "demo:index": "npm run dev -- examples/sample.csv -c 1",
+    "demo:sc": "npm run dev -- examples/sample_semicolon.csv -c temp -d ';' --header",
+    "check": "npm run build && node scripts/check.mjs",
+    "test": "npm run check"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "csv",
+    "cli",
+    "statistics",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
