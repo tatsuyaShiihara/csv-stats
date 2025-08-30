@@ -1,4 +1,19 @@
+![CI](https://github.com/tatsuyaShiihara/csv-stats/actions/workflows/ci.yml/badge.svg)
+
 # csv-stats
+
+概要
+
+- CSV の列に対して平均値・最大値を計算する CLI ツール
+- TypeScript + Node.js 18+
+
+使用方法
+
+```bash
+npm install
+npm run demo        # サンプルCSVで動作確認
+npm test            # チェック実行
+```
 
 Simple TypeScript CLI that reads a CSV file and prints the average and maximum of a specified column.
 
